@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JrX-Tr-tfA">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Sofia Pro Black Italic.ttf">
+            <string>SofiaPro-BlackItalic</string>
+        </array>
+        <array key="Sofia Pro Black.ttf">
+            <string>SofiaPro-Black</string>
+        </array>
+        <array key="Sofia Pro Bold.ttf">
+            <string>SofiaPro-Bold</string>
+        </array>
+        <array key="Sofia Pro Regular.ttf">
+            <string>SofiaPro-Regular</string>
+        </array>
+        <array key="Sofia Pro SemiBold.ttf">
+            <string>SofiaPro-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Tedaviler-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="TedavilerViewController" customModule="Dicle_Fırat_Dental_Grup" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tedaviler" id="cOw-JJ-gSq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="447" y="34"/>
+        </scene>
+        <!--Tedaviler-->
+        <scene sceneID="Njr-DE-iu8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rgD-fG-PEE" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Tedaviler" image="dental-implant" id="3p6-d3-EAd"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="l0p-hS-Lad">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2Qu-31-A3W"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zcX-JV-qD2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-423.19999999999999" y="33.733133433283363"/>
+        </scene>
+        <!--Hakkımızda-->
+        <scene sceneID="WuU-Fp-Shz">
+            <objects>
+                <viewController id="Dof-dR-dcy" customClass="MainViewController" customModule="Dicle_Fırat_Dental_Grup" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WDw-Cn-OK3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="30" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZCd-Je-avt">
+                                <rect key="frame" x="87.5" y="70" width="200" height="498"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="CmW-fH-USx" userLabel="logo">
+                                        <rect key="frame" x="39.5" y="0.0" width="121" height="104"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="121" id="3af-fg-jh0"/>
+                                            <constraint firstAttribute="height" constant="104" id="yfM-AD-fnd"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D&amp;F  Dental Grup" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvl-QP-kv8">
+                                        <rect key="frame" x="0.0" y="109.5" width="200" height="85"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="COP-aP-QQt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SofiaPro-Black" family="Sofia Pro" pointSize="29"/>
+                                        <color key="textColor" red="0.19607843137254902" green="0.74117647058823533" blue="0.89411764705882346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="giris_resmi" translatesAutoresizingMaskIntoConstraints="NO" id="VPW-L1-zYj">
+                                        <rect key="frame" x="4.5" y="224" width="191" height="191"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="191" id="0kZ-RV-bLJ"/>
+                                            <constraint firstAttribute="width" constant="191" id="L7g-3v-p8d"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sağlık  Ağızda Başlar" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAn-BK-ivX">
+                                        <rect key="frame" x="1.5" y="425" width="197" height="73"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="197" id="QX4-DC-dxm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SofiaPro-BlackItalic" family="Sofia Pro" pointSize="25"/>
+                                        <color key="textColor" red="0.92549019607843142" green="0.5725490196078431" blue="0.5490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2196078431372549" green="0.2196078431372549" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZCd-Je-avt" firstAttribute="centerX" secondItem="WDw-Cn-OK3" secondAttribute="centerX" id="JTt-gC-Tf7"/>
+                            <constraint firstItem="zQy-6L-j0v" firstAttribute="bottom" secondItem="ZCd-Je-avt" secondAttribute="bottom" constant="50" id="oOy-kF-W0S"/>
+                            <constraint firstItem="ZCd-Je-avt" firstAttribute="top" secondItem="zQy-6L-j0v" secondAttribute="top" constant="50" id="oex-Aq-xtj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zQy-6L-j0v"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Hakkımızda" image="dental-care" springLoaded="YES" id="mIW-Ul-xkK"/>
+                    <navigationItem key="navigationItem" title="Hakkımızda" id="dhS-uH-sMk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vgD-n4-rcO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2791.1999999999998" y="7.6461769115442282"/>
+        </scene>
+        <!--Randevu-->
+        <scene sceneID="n3a-kf-jXC">
+            <objects>
+                <viewController id="kx2-ps-2OG" customClass="RandevuViewController" customModule="Dicle_Fırat_Dental_Grup" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hZT-fv-0mN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="850"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yf4-s9-bvf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="801"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5nh-bF-ZWd">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="850"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Örneğin: Ahmed DEMİR" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZBW-kS-wFR">
+                                                <rect key="frame" x="27" y="103.5" width="320" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="320" id="P3l-qp-frh"/>
+                                                    <constraint firstAttribute="height" constant="40" id="jJl-Sj-YtA"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adınız Soyadınız" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9A-Kb-qRy">
+                                                <rect key="frame" x="30" y="81.5" width="106" height="20"/>
+                                                <fontDescription key="fontDescription" name="SofiaPro-SemiBold" family="Sofia Pro" pointSize="14"/>
+                                                <color key="textColor" white="0.78795278583254136" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Örneğin: 0532 588 7689" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lw1-a6-juO">
+                                                <rect key="frame" x="27" y="179.5" width="320" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="JXg-hj-4BT"/>
+                                                    <constraint firstAttribute="width" constant="320" id="gEu-HG-Wq2"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Telefon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Jm-zA-KcJ">
+                                                <rect key="frame" x="30" y="156.5" width="144" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="144" id="7Pp-xb-HI3"/>
+                                                    <constraint firstAttribute="height" constant="21" id="vaa-1s-aug"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SofiaPro-SemiBold" family="Sofia Pro" pointSize="14"/>
+                                                <color key="textColor" white="0.78795278583254136" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Örneğin: ahmet.demir@gmail.com" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5HN-ge-7nH">
+                                                <rect key="frame" x="27" y="255.5" width="320" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="320" id="B0P-6d-C3q"/>
+                                                    <constraint firstAttribute="height" constant="40" id="ZPH-dW-5lN"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-Posta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecd-xt-hHQ">
+                                                <rect key="frame" x="30" y="232.5" width="144" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="2z6-4y-vDf"/>
+                                                    <constraint firstAttribute="width" constant="144" id="M4N-sk-oyy"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SofiaPro-SemiBold" family="Sofia Pro" pointSize="14"/>
+                                                <color key="textColor" white="0.78795278583254136" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6xu-ho-ROA">
+                                                <rect key="frame" x="27" y="331.5" width="320" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="320" id="VTQ-Kq-RQa"/>
+                                                    <constraint firstAttribute="height" constant="40" id="gWw-Jx-eda"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Randevu Tarihi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5y-21-39E">
+                                                <rect key="frame" x="30" y="308.5" width="144" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="144" id="gow-Sl-foF"/>
+                                                    <constraint firstAttribute="height" constant="21" id="rvr-ZR-IPE"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SofiaPro-SemiBold" family="Sofia Pro" pointSize="14"/>
+                                                <color key="textColor" white="0.78795278583254136" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Randevu Formu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cwn-78-oGR">
+                                                <rect key="frame" x="87.5" y="15" width="200" height="36.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="Jmr-Md-4lk"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SofiaPro-Black" family="Sofia Pro" pointSize="25"/>
+                                                <color key="textColor" red="0.1960784314" green="0.74117647060000003" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mesajınız" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tQe-7J-ttq">
+                                                <rect key="frame" x="29" y="406.5" width="144" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="144" id="N0s-5m-2H0"/>
+                                                    <constraint firstAttribute="height" constant="21" id="RKy-bX-r2E"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SofiaPro-SemiBold" family="Sofia Pro" pointSize="14"/>
+                                                <color key="textColor" white="0.78795278583254136" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Metin" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="p6K-OW-2d9">
+                                                <rect key="frame" x="28" y="429.5" width="318" height="88"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="318" id="8Ao-TW-nyd"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="88" id="VIK-R4-Rwk"/>
+                                                    <constraint firstAttribute="width" constant="318" id="bIE-Wf-V74"/>
+                                                    <constraint firstAttribute="height" constant="88" id="g2A-jn-E4V"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SofiaPro-Regular" family="Sofia Pro" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j07-mk-buE" customClass="RoundedButton" customModule="Dicle_Fırat_Dental_Grup" customModuleProvider="target">
+                                                <rect key="frame" x="225" y="567.5" width="120" height="30"/>
+                                                <color key="backgroundColor" red="0.062745098040000002" green="0.50588235290000005" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="OWC-SJ-SU2"/>
+                                                    <constraint firstAttribute="height" constant="30" id="R3n-1T-Qha"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SofiaPro-Bold" family="Sofia Pro" pointSize="17"/>
+                                                <state key="normal" title="Randevu Al">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.2196078431372549" green="0.2196078431372549" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="6xu-ho-ROA" secondAttribute="trailing" constant="28" id="0dY-ca-prJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="5HN-ge-7nH" secondAttribute="trailing" constant="28" id="40x-XJ-GIJ"/>
+                                            <constraint firstItem="p6K-OW-2d9" firstAttribute="top" secondItem="tQe-7J-ttq" secondAttribute="bottom" constant="2" id="51p-gn-VNv"/>
+                                            <constraint firstItem="tQe-7J-ttq" firstAttribute="top" secondItem="6xu-ho-ROA" secondAttribute="bottom" constant="35" id="7Zt-8m-uP9"/>
+                                            <constraint firstItem="w5y-21-39E" firstAttribute="leading" secondItem="5nh-bF-ZWd" secondAttribute="leading" constant="30" id="9er-Jp-afo"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZBW-kS-wFR" secondAttribute="trailing" constant="28" id="ALg-j2-QCB"/>
+                                            <constraint firstItem="tQe-7J-ttq" firstAttribute="leading" secondItem="5nh-bF-ZWd" secondAttribute="leading" constant="29" id="B4H-Tc-yy9"/>
+                                            <constraint firstItem="Lw1-a6-juO" firstAttribute="top" secondItem="2Jm-zA-KcJ" secondAttribute="bottom" constant="2" id="CC4-tu-cQg"/>
+                                            <constraint firstItem="w5y-21-39E" firstAttribute="top" secondItem="5HN-ge-7nH" secondAttribute="bottom" constant="13" id="Cux-zj-siP"/>
+                                            <constraint firstItem="ecd-xt-hHQ" firstAttribute="top" secondItem="Lw1-a6-juO" secondAttribute="bottom" constant="13" id="Iql-Df-kwf"/>
+                                            <constraint firstItem="Cwn-78-oGR" firstAttribute="centerX" secondItem="5nh-bF-ZWd" secondAttribute="centerX" id="L8I-dR-2Eh"/>
+                                            <constraint firstItem="l9A-Kb-qRy" firstAttribute="top" secondItem="Cwn-78-oGR" secondAttribute="bottom" constant="30" id="Ltn-Ce-CYe"/>
+                                            <constraint firstItem="Cwn-78-oGR" firstAttribute="top" secondItem="5nh-bF-ZWd" secondAttribute="top" constant="15" id="MM4-Vx-NkU"/>
+                                            <constraint firstItem="2Jm-zA-KcJ" firstAttribute="top" secondItem="ZBW-kS-wFR" secondAttribute="bottom" constant="13" id="PWw-iC-3zn"/>
+                                            <constraint firstItem="p6K-OW-2d9" firstAttribute="top" secondItem="tQe-7J-ttq" secondAttribute="bottom" constant="2" id="QpG-4L-2gp"/>
+                                            <constraint firstItem="6xu-ho-ROA" firstAttribute="top" secondItem="w5y-21-39E" secondAttribute="bottom" constant="2" id="RH2-uK-5Is"/>
+                                            <constraint firstItem="l9A-Kb-qRy" firstAttribute="leading" secondItem="5nh-bF-ZWd" secondAttribute="leading" constant="30" id="Rnj-2e-agI"/>
+                                            <constraint firstItem="ZBW-kS-wFR" firstAttribute="top" secondItem="l9A-Kb-qRy" secondAttribute="bottom" constant="2" id="Sbx-ah-rY0"/>
+                                            <constraint firstItem="j07-mk-buE" firstAttribute="top" secondItem="p6K-OW-2d9" secondAttribute="bottom" constant="50" id="XrS-4N-vjB"/>
+                                            <constraint firstItem="Lw1-a6-juO" firstAttribute="leading" secondItem="5nh-bF-ZWd" secondAttribute="leading" constant="27" id="aNd-eE-CYa"/>
+                                            <constraint firstAttribute="trailing" secondItem="Lw1-a6-juO" secondAttribute="trailing" constant="28" id="ddR-Id-yv9"/>
+                                            <constraint firstAttribute="trailing" secondItem="j07-mk-buE" secondAttribute="trailing" constant="30" id="fJf-Tb-J2a"/>
+                                            <constraint firstAttribute="height" constant="850" id="fPZ-KV-bGy"/>
+                                            <constraint firstItem="6xu-ho-ROA" firstAttribute="leading" secondItem="5nh-bF-ZWd" secondAttribute="leading" constant="27" id="gOH-AJ-bMl"/>
+                                            <constraint firstItem="p6K-OW-2d9" firstAttribute="leading" secondItem="5nh-bF-ZWd" secondAttribute="leading" constant="28" id="kyc-2B-3v0"/>
+                                            <constraint firstItem="5HN-ge-7nH" firstAttribute="leading" secondItem="5nh-bF-ZWd" secondAttribute="leading" constant="27" id="oGC-j1-lyf"/>
+                                            <constraint firstItem="ecd-xt-hHQ" firstAttribute="leading" secondItem="5nh-bF-ZWd" secondAttribute="leading" constant="30" id="oT7-Kb-ajE"/>
+                                            <constraint firstItem="2Jm-zA-KcJ" firstAttribute="leading" secondItem="5nh-bF-ZWd" secondAttribute="leading" constant="30" id="qaZ-Kb-8pb"/>
+                                            <constraint firstAttribute="trailing" secondItem="p6K-OW-2d9" secondAttribute="trailing" constant="29" id="vLs-MB-Txi"/>
+                                            <constraint firstItem="ZBW-kS-wFR" firstAttribute="leading" secondItem="5nh-bF-ZWd" secondAttribute="leading" constant="27" id="ypw-LX-czi"/>
+                                            <constraint firstItem="5HN-ge-7nH" firstAttribute="top" secondItem="ecd-xt-hHQ" secondAttribute="bottom" constant="2" id="zaj-kb-TlJ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="5nh-bF-ZWd" firstAttribute="top" secondItem="Yf4-s9-bvf" secondAttribute="top" id="5Mx-kP-1SK"/>
+                                    <constraint firstAttribute="trailing" secondItem="5nh-bF-ZWd" secondAttribute="trailing" id="6SD-sJ-agl"/>
+                                    <constraint firstItem="5nh-bF-ZWd" firstAttribute="leading" secondItem="Yf4-s9-bvf" secondAttribute="leading" id="jYh-F8-a7s"/>
+                                    <constraint firstAttribute="bottom" secondItem="5nh-bF-ZWd" secondAttribute="bottom" id="uGc-bf-18C"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3PO-7d-CRj" firstAttribute="trailing" secondItem="Yf4-s9-bvf" secondAttribute="trailing" id="7S6-00-yv2"/>
+                            <constraint firstItem="3PO-7d-CRj" firstAttribute="bottom" secondItem="Yf4-s9-bvf" secondAttribute="bottom" id="EZx-mN-ezk"/>
+                            <constraint firstItem="Yf4-s9-bvf" firstAttribute="top" secondItem="hZT-fv-0mN" secondAttribute="top" id="GXY-Tf-jzN"/>
+                            <constraint firstItem="5nh-bF-ZWd" firstAttribute="width" secondItem="hZT-fv-0mN" secondAttribute="width" id="jEA-AP-joD"/>
+                            <constraint firstItem="Yf4-s9-bvf" firstAttribute="leading" secondItem="3PO-7d-CRj" secondAttribute="leading" id="uUa-P0-kBK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3PO-7d-CRj"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Randevu" id="ZMR-Bd-vf4"/>
+                    <size key="freeformSize" width="375" height="850"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="5HN-ge-7nH" id="oNE-lJ-Lt8"/>
+                        <outlet property="metinTextView" destination="p6K-OW-2d9" id="AHT-yS-2vW"/>
+                        <outlet property="nameTextField" destination="ZBW-kS-wFR" id="XnR-jD-iIT"/>
+                        <outlet property="phoneTextField" destination="Lw1-a6-juO" id="iBW-C1-S5R"/>
+                        <outlet property="randevuTextField" destination="6xu-ho-ROA" id="cO3-8p-IEq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V6N-73-vAG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1826" y="1112"/>
+        </scene>
+        <!--Videolar-->
+        <scene sceneID="jp4-k7-umV">
+            <objects>
+                <viewController id="bX0-47-oce" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="172-dw-bfl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="hha-yX-IPU"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Videolar" id="ddI-ju-ns4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fvY-fu-tm5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5192.8000000000002" y="33.733133433283363"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="j0c-rQ-gA9">
+            <objects>
+                <tabBarController id="JrX-Tr-tfA" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7pT-Ms-D7q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Dof-dR-dcy" kind="relationship" relationship="viewControllers" id="pTl-5N-xMp"/>
+                        <segue destination="rgD-fG-PEE" kind="relationship" relationship="viewControllers" id="hfS-vO-hHV"/>
+                        <segue destination="wwH-Th-8am" kind="relationship" relationship="viewControllers" id="CTs-9K-xGC"/>
+                        <segue destination="ryq-Ab-q5a" kind="relationship" relationship="viewControllers" id="JBv-pD-NaE"/>
+                        <segue destination="rTB-dv-dQ4" kind="relationship" relationship="viewControllers" id="DIC-qP-Izh"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HLg-qX-V0n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3524" y="1010"/>
+        </scene>
+        <!--Bize Ulaşın-->
+        <scene sceneID="3RK-H7-J88">
+            <objects>
+                <viewController id="pFg-pt-KXF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pX8-0k-tPE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="pxl-yC-yJg"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Bize Ulaşın" id="pSI-go-u3d"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZuH-1F-WHX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-760.79999999999995" y="1549.4752623688157"/>
+        </scene>
+        <!--Videolar-->
+        <scene sceneID="KXS-Fb-7rI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rTB-dv-dQ4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Videolar" image="videolar" id="yfC-cm-xjz"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JvK-fg-z6J">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bX0-47-oce" kind="relationship" relationship="rootViewController" id="HhL-bg-ViD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mHH-A3-GZU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4487" y="34"/>
+        </scene>
+        <!--Bize Ulaşın-->
+        <scene sceneID="JvO-dZ-bSI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ryq-Ab-q5a" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Bize Ulaşın" image="bize-ulasin" id="y9H-pP-k0f"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tRB-ip-QMf">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pFg-pt-KXF" kind="relationship" relationship="rootViewController" id="wJW-19-7MA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B9q-g6-RWN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1478" y="1549"/>
+        </scene>
+        <!--Randevu-->
+        <scene sceneID="EV5-ES-5fl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wwH-Th-8am" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Randevu" image="medical-appointment (1)" id="pqW-QS-0iG"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="U39-gF-FJk">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kx2-ps-2OG" kind="relationship" relationship="rootViewController" id="Kkb-2d-GxJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q01-PE-sIE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1158" y="1030"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bize-ulasin" width="22" height="30"/>
+        <image name="dental-care" width="27" height="31"/>
+        <image name="dental-implant" width="24" height="28"/>
+        <image name="giris_resmi" width="193" height="193"/>
+        <image name="logo" width="121" height="104"/>
+        <image name="medical-appointment (1)" width="30" height="30"/>
+        <image name="videolar" width="29" height="23"/>
+    </resources>
+</document>
