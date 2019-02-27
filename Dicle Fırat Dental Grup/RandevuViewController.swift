@@ -10,6 +10,9 @@ import UIKit
 
 class RandevuViewController: UIViewController {
     
+    private var datePicker: UIDatePicker?
+    var dateFormatter: DateFormatter?
+    
     @IBOutlet weak var metinTextView: UITextView!
     
     @IBOutlet weak var nameTextField: UITextField!{
@@ -44,21 +47,51 @@ class RandevuViewController: UIViewController {
         }
         
     }
-    
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(RandevuViewController.handleTap))
         view.addGestureRecognizer(tap)
-       
         
+        datePicker = UIDatePicker()
         
-
+        // datePicker ı localize ediyoruz.
+        // dateChanged() fonksiyonunda text'e yansıyacak kısmını(dateFormatter) localize ediyoruz.
+        let loc = Locale(identifier: "tr_TR")
+        self.datePicker?.locale = loc
+        datePicker?.datePickerMode = .dateAndTime
+        randevuTextField.inputView = datePicker
+    
+        datePicker?.addTarget(self, action: #selector(RandevuViewController.dateChanged(datePicker:)), for: .valueChanged)
+        
+        // Tarihe tap yapıldağında ilgili fonksiyon(aşağıda) dismiss işlemini gerçekleştirir.
+        let dateTap = UITapGestureRecognizer(target: self, action: #selector(RandevuViewController.viewTappedDuringDatePicker(gestureRecognizer:)))
+        view.addGestureRecognizer(dateTap)
 
     }
     
+    // DatePicker için Dismiss
+    @objc func viewTappedDuringDatePicker(gestureRecognizer: UITapGestureRecognizer) {
+        
+        view.endEditing(true)
+        
+    }
+    
+    @objc func dateChanged(datePicker: UIDatePicker) {
+        
+        dateFormatter = DateFormatter()
+        // Tarih formatını belirleyip localize edioyoruz. dateFormat yazılışına dikkat et.
+        dateFormatter!.dateFormat = "d' 'MMM' 'yyyy',   'EEEE' Günü,   Saat: 'HH:mm'"
+        dateFormatter!.locale = Locale(identifier: "tr_TR")
+        
+        // date Formatter kısmında her ne kadar türkçe görünse de
+        // dateFormatter da localize etmeden text özelliğine türkçe olarak aktaramıyoruz.
+        randevuTextField.text = dateFormatter!.string(from: (datePicker.date))
+        
+        // aşağıdaki satır yazıldığında datePicker dan bir tarih seçildiği gibi picker dismiss ediliyor.
+        // view.endEditing(true)
+    }
   
     @objc func handleTap() {
         

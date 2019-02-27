@@ -140,7 +140,6 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Örneğin: Ahmed DEMİR" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZBW-kS-wFR">
                                                 <rect key="frame" x="27" y="103.5" width="320" height="40"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="320" id="P3l-qp-frh"/>
                                                     <constraint firstAttribute="height" constant="40" id="jJl-Sj-YtA"/>
                                                 </constraints>
                                                 <nil key="textColor"/>
@@ -157,7 +156,6 @@
                                                 <rect key="frame" x="27" y="179.5" width="320" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="JXg-hj-4BT"/>
-                                                    <constraint firstAttribute="width" constant="320" id="gEu-HG-Wq2"/>
                                                 </constraints>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -176,7 +174,6 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Örneğin: ahmet.demir@gmail.com" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5HN-ge-7nH">
                                                 <rect key="frame" x="27" y="255.5" width="320" height="40"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="320" id="B0P-6d-C3q"/>
                                                     <constraint firstAttribute="height" constant="40" id="ZPH-dW-5lN"/>
                                                 </constraints>
                                                 <nil key="textColor"/>
@@ -193,10 +190,9 @@
                                                 <color key="textColor" white="0.78795278583254136" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6xu-ho-ROA">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Randevu Tarihini Giriniz" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6xu-ho-ROA">
                                                 <rect key="frame" x="27" y="331.5" width="320" height="40"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="320" id="VTQ-Kq-RQa"/>
                                                     <constraint firstAttribute="height" constant="40" id="gWw-Jx-eda"/>
                                                 </constraints>
                                                 <nil key="textColor"/>
@@ -236,9 +232,6 @@
                                                 <rect key="frame" x="28" y="429.5" width="318" height="88"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="318" id="8Ao-TW-nyd"/>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="88" id="VIK-R4-Rwk"/>
-                                                    <constraint firstAttribute="width" constant="318" id="bIE-Wf-V74"/>
                                                     <constraint firstAttribute="height" constant="88" id="g2A-jn-E4V"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="SofiaPro-Regular" family="Sofia Pro" pointSize="17"/>
